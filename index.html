@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Oasis Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Iconos -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background: radial-gradient(circle at top, #111 0%, #000 60%);
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+    }
+
+    .hub{
+      width:100%;
+      max-width:420px;
+      padding:24px;
+    }
+
+    h1{
+      text-align:center;
+      font-size:18px;
+      letter-spacing:2px;
+      margin-bottom:28px;
+      font-weight:600;
+      opacity:.9;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:18px;
+    }
+
+    .app{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      height:120px;
+      border-radius:18px;
+      text-decoration:none;
+      color:#fff;
+      background:#111;
+      border:1px solid rgba(255,255,255,.08);
+      transition:all .18s ease;
+    }
+
+    .app i{
+      font-size:34px;
+      margin-bottom:10px;
+    }
+
+    .app span{
+      font-size:14px;
+      letter-spacing:.3px;
+      opacity:.9;
+    }
+
+    .app:hover{
+      transform:translateY(-3px);
+      box-shadow:0 10px 30px rgba(0,0,0,.6);
+    }
+
+    /* Colores por app */
+    .crm{
+      background:linear-gradient(160deg, #0a3cff, #021a66);
+    }
+    .crm:hover{ box-shadow:0 10px 30px rgba(10,60,255,.45); }
+
+    .fact{
+      background:linear-gradient(160deg, #00c853, #006b2d);
+    }
+    .fact:hover{ box-shadow:0 10px 30px rgba(0,200,83,.45); }
+
+    .inv{
+      background:linear-gradient(160deg, #ff9800, #7a3e00);
+    }
+    .inv:hover{ box-shadow:0 10px 30px rgba(255,152,0,.45); }
+
+    .auth{
+      background:linear-gradient(160deg, #2c2c2c, #0f0f0f);
+    }
+    .auth:hover{ box-shadow:0 10px 30px rgba(255,255,255,.2); }
+
+    footer{
+      margin-top:28px;
+      text-align:center;
+      font-size:12px;
+      color:#555;
+      letter-spacing:.5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hub">
+    <h1>OASIS · HUB</h1>
+
+    <div class="grid">
+
+      <!-- EDITA SOLO LOS href -->
+      <a class="app crm" href="https://TUUSUARIO.github.io/oasis-crm/">
+        <i class="fa-solid fa-users"></i>
+        <span>CRM</span>
+      </a>
+
+      <a class="app fact" href="https://TUUSUARIO.github.io/oasis-facturacion/">
+        <i class="fa-solid fa-file-invoice-dollar"></i>
+        <span>Cotización / Factura</span>
+      </a>
+
+      <a class="app inv" href="https://TUUSUARIO.github.io/oasis-inventario/">
+        <i class="fa-solid fa-boxes-stacked"></i>
+        <span>Inventario</span>
+      </a>
+
+      <a class="app auth" href="https://TUUSUARIO.github.io/oasis-auth/">
+        <i class="fa-solid fa-lock"></i>
+        <span>Acceso</span>
+      </a>
+
+    </div>
+
+    <footer>Oasis Hub</footer>
+  </div>
+
+</body>
+</html>
