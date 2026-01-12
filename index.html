@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b0b0b" />
+  <title>Oasis Hub · Suite 2026</title>
+  <meta name="description" content="Centro de control de Oasis: CRM, Cotización/Factura, Inventario y más." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="mark" aria-hidden="true">OA</div>
+      <div>
+        <div class="brandName">Oasis Hub</div>
+        <div class="brandTag">Suite Operativa · 2026 · Control total, cero caos.</div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a class="navLink" href="#apps">Apps</a>
+      <a class="navLink" href="#roadmap">Roadmap</a>
+      <a class="navLink" href="#about">Sobre</a>
+      <a class="btn ghost" id="btnContact" href="#">Contacto</a>
+      <a class="btn" href="#apps">Abrir</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="heroCard">
+        <div class="pill">Oasis Air Cleaner Services LLC</div>
+        <h1>Tu centro de control operacional</h1>
+        <p class="lead">
+          Acceso directo a tus apps de negocio. Facturación con PDF, CRM y control de inventario.
+          Diseño serio, ejecución rápida.
+        </p>
+
+        <div class="heroStats">
+          <div class="stat">
+            <div class="statN" id="statApps">4</div>
+            <div class="statL">Módulos</div>
+          </div>
+          <div class="stat">
+            <div class="statN" id="statOnline">0</div>
+            <div class="statL">Online</div>
+          </div>
+          <div class="stat">
+            <div class="statN">2026</div>
+            <div class="statL">Enfoque</div>
+          </div>
+        </div>
+
+        <div class="heroBtns">
+          <a class="btn" href="#apps">Ver apps</a>
+          <a class="btn ghost" id="btnOpenDefault" href="#">Abrir Facturación</a>
+        </div>
+
+        <div class="tip">
+          No es “MVP”. Es base firme: cada módulo crece sin romper el resto.
+        </div>
+      </div>
+
+      <div class="sideCard">
+        <div class="sideTitle">Resumen</div>
+        <div class="sideRow"><span>Estado</span><strong id="statusLabel">Operativo</strong></div>
+        <div class="sideRow"><span>Versión</span><strong class="mono">Hub v1.0</strong></div>
+        <div class="sideRow"><span>Última actualización</span><strong id="lastBuild">—</strong></div>
+        <div class="mini">Listo para enchufar repos y correr.</div>
+      </div>
+    </section>
+
+    <section id="apps" class="section">
+      <div class="sectionHead">
+        <h2>Apps</h2>
+        <div class="sub">Acceso directo a cada módulo</div>
+      </div>
+
+      <div class="grid" id="appsGrid"></div>
+    </section>
+
+    <section id="roadmap" class="section">
+      <div class="sectionHead">
+        <h2>Roadmap 2026</h2>
+        <div class="sub">Ejecución por fases (sin dispersión)</div>
+      </div>
+
+      <div class="road">
+        <div class="roadItem">
+          <div class="roadN">01</div>
+          <div>
+            <div class="roadT">Facturación + Cotización (PDF + Logo + Negocio)</div>
+            <div class="roadD">Documento pro, numeración, estados, exportable.</div>
+          </div>
+        </div>
+        <div class="roadItem">
+          <div class="roadN">02</div>
+          <div>
+            <div class="roadT">CRM (Clientes + Historial)</div>
+            <div class="roadD">Base de clientes, servicios, seguimiento.</div>
+          </div>
+        </div>
+        <div class="roadItem">
+          <div class="roadN">03</div>
+          <div>
+            <div class="roadT">Inventario (Entradas/Salidas)</div>
+            <div class="roadD">Stock mínimo, movimientos, alertas.</div>
+          </div>
+        </div>
+        <div class="roadItem">
+          <div class="roadN">04</div>
+          <div>
+            <div class="roadT">Reportes</div>
+            <div class="roadD">Ventas por mes, top servicios, cuentas por cobrar.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="sectionHead">
+        <h2>Sobre el Hub</h2>
+        <div class="sub">Una puerta de entrada. Una operación ordenada.</div>
+      </div>
+
+      <div class="about card">
+        <p>
+          Este hub existe para que tu negocio no dependa de “buscar links”, “archivos”, ni “dónde está el módulo”.
+          Un clic y estás dentro. Lo demás es producción.
+        </p>
+
+        <div class="aboutMini">
+          <div><strong>Objetivo:</strong> velocidad sin perder control.</div>
+          <div><strong>Estándar:</strong> simple, mantenible y escalable.</div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© Oasis Hub · 2026</div>
+      <div class="mono" id="footInfo">build: —</div>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
