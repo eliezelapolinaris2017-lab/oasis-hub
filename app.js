@@ -1,7 +1,7 @@
 // === LINKS FIJOS (SIN SETTINGS EN PANTALLA) ===
 // Cambia cuando publiques cada repo.
 const LINKS = {
-  crm: "#",              // "https://TUUSUARIO.github.io/oasis-crm/"
+  crm: "#",              // "https://servicios.oasisservicespr.com/"
   facturacion: "#",      // "https://TUUSUARIO.github.io/oasis-facturacion/"
   inventario: "#",       // "https://TUUSUARIO.github.io/oasis-inventario/"
   auth: "#"              // "https://TUUSUARIO.github.io/oasis-auth/"
