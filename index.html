@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Oasis Suite 2026</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="wrap top">
+    <div>
+      <div class="brand">Oasis Suite</div>
+      <div class="tag">Operación 2026: control, velocidad y cero caos.</div>
+    </div>
+
+    <div class="actions">
+      <a class="btn ghost" id="btnConfig" href="#config">Config</a>
+      <a class="btn" id="btnApps" href="#apps">Abrir apps</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero card">
+      <div class="hero-left">
+        <h1>Tu centro de control</h1>
+        <p>
+          Un hub limpio para navegar tus apps: CRM, Cotización/Factura, Inventario y más.
+          Cada app vive independiente, pero comparte datos por Firebase (cuando lo conectemos).
+        </p>
+        <div class="kpis">
+          <div class="kpi"><div class="kpiN">1</div><div class="kpiL">Hub</div></div>
+          <div class="kpi"><div class="kpiN">N</div><div class="kpiL">Apps</div></div>
+          <div class="kpi"><div class="kpiN">1</div><div class="kpiL">Data Core</div></div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="panel">
+          <div class="panelT">Estado</div>
+          <div class="panelRow"><span>Login</span><strong id="authState">Pendiente</strong></div>
+          <div class="panelRow"><span>Apps publicadas</span><strong id="appsCount">0</strong></div>
+          <div class="panelRow"><span>Última actualización</span><strong id="lastUpdate">—</strong></div>
+          <div class="small">* Hoy solo es hub. El login/data vienen después.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="apps" class="section">
+      <div class="sectionTop">
+        <h2>Apps</h2>
+        <div class="small">Añade links cuando publiques cada repo.</div>
+      </div>
+
+      <div class="grid" id="appsGrid">
+        <!-- Cards generadas por JS -->
+      </div>
+    </section>
+
+    <section id="config" class="section">
+      <div class="sectionTop">
+        <h2>Configuración rápida</h2>
+        <div class="small">Esto solo edita los enlaces del hub (localmente en tu navegador).</div>
+      </div>
+
+      <div class="card">
+        <div class="row">
+          <div>
+            <label class="lbl">URL CRM</label>
+            <input class="inp" id="urlCrm" placeholder="https://usuario.github.io/oasis-crm/" />
+          </div>
+          <div>
+            <label class="lbl">URL Facturación</label>
+            <input class="inp" id="urlFact" placeholder="https://usuario.github.io/oasis-facturacion/" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div>
+            <label class="lbl">URL Inventario</label>
+            <input class="inp" id="urlInv" placeholder="https://usuario.github.io/oasis-inventario/" />
+          </div>
+          <div>
+            <label class="lbl">URL Auth (opcional)</label>
+            <input class="inp" id="urlAuth" placeholder="https://usuario.github.io/oasis-auth/" />
+          </div>
+        </div>
+
+        <div class="btnRow">
+          <button class="btn" id="saveBtn">Guardar</button>
+          <button class="btn ghost" id="resetBtn">Reset</button>
+        </div>
+
+        <div class="small" id="msg"></div>
+      </div>
+    </section>
+
+    <footer class="wrap foot">
+      <div class="small">© Oasis Suite · 2026 · Hub en GitHub Pages</div>
+    </footer>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
